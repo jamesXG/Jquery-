@@ -1,0 +1,230 @@
+@import "./font/iconfont.css";
+
+html {
+  color: #333;
+  background: #f5f5f5;
+}
+
+html, body {
+  background: #f0f0f0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-size: 14px;
+  font-family: PingFangSC;
+}
+
+img {
+  border: none;
+}
+
+em,
+strong {
+  font-style: normal;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+/* 消除q前后的内容 */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+button {
+  border: none;
+}
+/* 使得表单元素在 ie 下能继承字体大小 */
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 60px #fff inset;
+  box-shadow: 0 0 0 60px #fff inset;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+/*输入框聚焦效果*/
+input[type='text']:focus, input[type='password']:focus {
+  border-color: #99bcff;
+  animation: show_focus .3s;
+  -webkit-animation: show_focus .3s;
+}
+@keyframes show_focus {
+  from {border-color: #e6e6e6}
+  to {border-color: #99bcff;}
+}
+/* 将斜体扶正 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.clear_float::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.main_center {
+  width: 1176px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 72px;
+  background: #fff;
+  box-shadow: 0 8px 8px 0 #f0f0f0;
+}
+
+.header .logo img {
+  display: inline-block;
+  width: 128px;
+  margin: 22px 0;
+  float: left;
+}
+
+.help {
+  position: relative;
+  float: right;
+  margin: 24px 0;
+  line-height: 1.71;
+}
+
+.main {
+  min-height: 640px;
+  background: #fff;
+  margin-top: 16px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .05);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .05);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .05);
+  overflow: hidden;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer a, .footer {
+  color: #b3b3b3;
+}
+
+/*输入框错误提示*/
+.error {
+  border-radius: 4px;
+  border-color: #ff6b48 !important;
+}
+
+.error_text {
+  position: absolute;
+  left: 16px;
+  bottom: -20px;
+  font-size: 12px;
+  color: #ff6b48;
+  animation: show_error .6s;
+}
+
+@keyframes show_error {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: -20px;
+    opacity: 1;
+  }
+}

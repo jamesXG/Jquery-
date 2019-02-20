@@ -1,0 +1,138 @@
+.pwd_main {
+  width: 1112px;
+  margin: 18px auto;
+  overflow: hidden;
+}
+
+.pwd_main .pwd_header {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  background: #fff;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pwd_main .pwd_header h1 {
+  font-size: 24px;
+  font-weight: 400;
+  float: left;
+}
+
+.pwd_main .pwd_header .return_login {
+  float: right;
+  color: #4886ff;
+}
+
+.color_h {
+  color: #808080 !important;
+}
+
+.none_border {
+  border: none !important;
+}
+
+/*警告框*/
+.warn_alert,.error_alert {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, .8);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  line-height: 40px;
+}
+.error_alert .iconfont {
+  color: #ff9d25;
+}
+.warn_alert .iconfont, .error_alert .iconfont {
+  font-size: 16px;
+  margin-left: 24px;
+}
+
+.warn_alert .iconfont {
+  color: #5e95ff;
+}
+
+.warn_alert span, .error_alert span{
+  color: #808080;
+}
+
+/*自定义单选按钮*/
+/*隐藏input*/
+label.bui-radios-label input[type="radio"] {
+  opacity: 0;
+  visibility: hidden;
+  outline: none;
+}
+
+/*自定义radio*/
+label.bui-radios-label .bui-radios {
+  display: inline-block;
+  position: relative;
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  border: 1px solid #808080;
+  border-radius: 50%;
+  margin-right: 8px;
+  cursor: pointer;
+  vertical-align: -3px;
+}
+
+/*单选框选中后，自定义radio的样式*/
+label.bui-radios-label input[type="radio"]:checked + .bui-radios:after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+}
+
+label.bui-radios-label input[type="radio"]:checked + .bui-radios {
+  background: #4886ff;
+  border: 1px solid #4886ff;
+}
+
+label.bui-radios-label input[type="radio"]:disabled + .bui-radios {
+  background: #fff;
+  border: 1px solid #808080;
+}
+
+/*禁用样式*/
+label.bui-radios-label input[type="radio"]:disabled:checked + .bui-radios:after {
+  background: #b3b3b3;
+}
+.bui-disabled {
+  color: #ccc;
+  cursor: no-drop;
+}
+
+/*自定义radio的过渡效果*/
+label.bui-radios-label.bui-radios-anim .bui-radios {
+  -webkit-transition: background-color ease-out .3s;
+  transition: background-color ease-out .3s;
+}
+
+.padding_16x {
+  padding-left: 16px !important;
+}
+
+.success {
+  border: 1px solid #73db9d !important;
+  color: #73db9d !important;
+  background: #f0fff6 !important;
+}
+.error_review {
+  border: 1px solid #ffac99 !important;
+  color: #ffac99 !important;
+  background: #fff3f0 !important;
+  padding: 0 6px;
+}
+input:disabled {
+  background: #e6e6e6;
+  color: #808080;
+}

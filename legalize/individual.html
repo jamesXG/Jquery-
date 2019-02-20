@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>五星云站</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/legalize.css">
+</head>
+<body>
+<div class="container">
+  <!--头部-->
+  <header class="header">
+    <div class="main_center clear_float">
+      <a href="#" class="logo">
+        <img src="../image/logo.png">
+      </a>
+      <a href="#" class="help admin legaalize_admin">管理员</a>
+      <a href="#" class="help notice">
+        <i class="iconfont icon-lingdang"></i>
+      </a>
+    </div>
+  </header>
+  <!--内容-->
+  <article class="main main_center">
+    <div class="pwd_main">
+      <header class="pwd_header clear_float none_border">
+        <h1>账号认证</h1>
+      </header>
+      <div class="warn_alert">
+        <i class="iconfont icon-tishi"></i>
+        <span>为保障服务的正常使用，请完成账号认证。认证通过后，不能修改认证类型。</span>
+      </div>
+      <form class="legalize_form">
+        <div class="legalize_item clear_float">
+          <div class="item_title">认证类型*：</div>
+          <div class="item_input-main clear_float">
+            <div class="radio">
+              <label class="bui-radios-label bui-radios-anim">
+                <input type="radio" name="type" data-id="mine" checked><i class="bui-radios"></i>个人认证
+              </label>
+            </div>
+            <div class="radio">
+              <label class="bui-radios-label bui-radios-anim">
+                <input type="radio" name="type" data-id="company"><i class="bui-radios"></i>企业认证
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="legalize_item clear_float">
+          <div class="item_title">认证状态：</div>
+          <div class="item_input-main">
+            <div class="legalize_tag">
+              <span>未认证</span>
+            </div>
+          </div>
+        </div>
+        <!--个人认证-->
+        <div class="legalize_item clear_float tpl_mine">
+          <div class="item_title">姓名*：</div>
+          <div class="item_input-main">
+            <div class="input">
+              <input type="text" name="mine_name" placeholder="请输入">
+            </div>
+          </div>
+        </div>
+        <div class="legalize_item clear_float tpl_mine">
+          <div class="item_title">身份证号*：</div>
+          <div class="item_input-main">
+            <div class="input">
+              <input type="text" name="mine_card_ID" placeholder="请输入">
+            </div>
+          </div>
+        </div>
+        <div class="legalize_item clear_float tpl_mine">
+          <div class="item_title">手持身份证*：</div>
+          <div class="item_input-main">
+            <label class="upload">
+              <span>上传</span>
+              <input type="file" name="mine_photo" hidden/>
+            </label>
+            <span class="upload_text color_h">请上传大小不超过5M的图片，支持 .jpg .jpeg .bmp .gif .png 等格式。</span>
+          </div>
+        </div>
+        <div class=" legalize_item legalize_upload tpl_mine">
+          <div class="upload_example clear_float">
+            <img class="upload_img" src="../image/invalid-name@3x.png">
+            <div class="upload_detail">
+              <h2 class="upload_detail-title">认证要求：</h2>
+              <ul>
+                <li>请上传手持身份证进行认证</li>
+                <li>证件信息如姓名、人像、身份证号等，清晰无遮挡。(请参照下图)</li>
+              </ul>
+              <img class="abbre_img" src="../image/img-80-80@3x.png">
+            </div>
+          </div>
+        </div>
+        <!--企业认证-->
+        <div class="legalize_item clear_float tpl_company">
+          <div class="item_title">企业名称*：</div>
+          <div class="item_input-main">
+            <div class="input">
+              <input type="text" name="company_name" placeholder="请输入">
+            </div>
+          </div>
+        </div>
+        <div class="legalize_item clear_float tpl_company">
+          <div class="item_title">法人姓名*：</div>
+          <div class="item_input-main">
+            <div class="input">
+              <input type="text" name="company_fa_name" placeholder="请输入">
+            </div>
+          </div>
+        </div>
+        <div class="legalize_item clear_float tpl_company">
+          <div class="item_title">统一信用代码*：</div>
+          <div class="item_input-main">
+            <div class="input">
+              <input type="text" name="company_code" placeholder="请输入">
+            </div>
+          </div>
+        </div>
+        <div class="legalize_item clear_float tpl_company">
+          <div class="item_title">营业执照*：</div>
+          <div class="item_input-main">
+            <label class="upload">
+              <span>上传</span>
+              <input type="file" name="company_photo" hidden/>
+            </label>
+            <span class="upload_text color_h">请上传大小不超过5M的图片，支持 .jpg .jpeg .bmp .gif .png 等格式。</span>
+          </div>
+        </div>
+        <div class="legalize_item legalize_upload tpl_company">
+          <div class="upload_example clear_float">
+            <img class="upload_img" src="../image/invalid-name@3x.png">
+            <div class="upload_detail">
+              <h2 class="upload_detail-title">认证要求：</h2>
+              <ul>
+                <li>营业执照须加盖公章；</li>
+                <li>证件信息清晰无遮挡。(请参照下图)</li>
+              </ul>
+              <img class="abbre_company_img" src="../image/img-114-96.png">
+            </div>
+          </div>
+        </div>
+        <div class="legalize_item">
+          <div class="item_input-main clear_float">
+            <button id="review_sub" type="submit" class="legalize_sub-btn">提交</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </article>
+</div>
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/extend.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/legalize.js"></script>
+</html>

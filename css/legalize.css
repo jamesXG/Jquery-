@@ -1,0 +1,260 @@
+.header_nav {
+  float: left;
+  font-size: 16px;
+  margin: 20px 300px;
+  line-height: 2;
+}
+
+.header_nav a {
+  position: relative;
+  margin-right: 24px;
+}
+
+.header_nav .active::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 64px;
+  height: 2px;
+  background: #4886ff;
+}
+.header .notice {
+  color: #333;
+}
+.header .notice {
+  position: relative;
+  float: right;
+  bottom: 10px;
+  right: -50px;
+}
+.header .notice::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ed1c2e;
+}
+.header .notice .iconfont {
+  font-size: 23px;
+}
+.header .legaalize_admin {
+  right: 55px !important;
+}
+.header .admin {
+  margin-right: 12px;
+}
+
+.header .admin::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -13px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #333;
+  border-bottom: 5px solid transparent;
+  border-radius: 3px;
+}
+
+/*内容*/
+.center_list {
+  width: 760px;
+  margin: 32px auto;
+}
+
+.center_list .list_item {
+  position: relative;
+  height: 72px;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 72px;
+}
+
+.list_item .item_title {
+  font-weight: 500;
+  margin: auto 16px;
+}
+
+.list_item .item_description {
+  position: absolute;
+  left: 128px;
+}
+
+.list_item .item_operate {
+  position: absolute;
+  right: 16px;
+  color: #4886ff;
+}
+
+.list_item .item_operate .iconfont {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.legalize_tag {
+  display: inline-block;
+  width: 58px;
+  height: 32px;
+  line-height: 32px;
+  color: #ff9d25;
+  box-sizing: border-box;
+  border: 1px solid #ff9d25;
+  border-radius: 4px;
+  background: #fff8ef;
+  text-align: center;
+  overflow: hidden;
+}
+.error_reason {
+  position: relative;
+  color: #808080;
+  left: 16px;
+  bottom: 13px;
+
+}
+.index_tag {
+  position: absolute;
+  bottom: 20px;
+  left: 128px;
+}
+/*个人认证*/
+.legalize_form {
+  width: 100%;
+  margin-top: 24px;
+}
+.legalize_form .legalize_item {
+  position: relative;
+  min-height: 72px;
+}
+.legalize_item .item_title {
+  line-height: 72px;
+}
+.legalize_item .item_title,.legalize_item .item_input-main {
+  float: left;
+}
+.legalize_item .item_input-main {
+  position: absolute;
+  left: 128px;
+  min-width: 400px;
+  height: 40px;
+  min-height: 40px;
+  margin-top: 16px;
+}
+
+.item_input-main .radio {
+  position: relative;
+  width: 120px;
+  height: 24px;
+  float: left;
+  margin-right: 32px;
+  margin-top: 8px;
+}
+.item_input-main .radio label {
+  margin-left: -10px;
+}
+
+.item_input-main input[type='text'] {
+  width: 100%;
+  height: 40px;
+  padding-left: 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e5e5;
+}
+
+.item_input-main .upload {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  cursor: pointer;
+}
+.item_input-main .upload > span {
+  line-height: 40px;
+}
+.item_input-main .upload_text {
+  margin-left: 6px;
+}
+.legalize_upload .upload_example {
+  position: relative;
+  left: 128px;
+  width: 480px;
+  height: 230px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  margin-top: 10px;
+}
+.upload_img {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+}
+.upload_detail {
+  width: 225px;
+  float: right;
+  margin-top: 24px;
+}
+.upload_detail .upload_detail-title {
+  color: #808080;
+  margin-left: -10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.upload_detail ul {
+  color: #b3b3b3;
+  font-size: 12px;
+  margin-right: 32px;
+}
+.upload_detail ul li {
+  position: relative;
+  width: 221px;
+  line-height: 1.71;
+}
+.upload_detail ul li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #b3b3b3;
+}
+.abbre_img {
+  width: 80px;
+  height: 80px;
+}
+abbre_company_img {
+  width: 144px;
+  height: 96px;
+}
+.abbre_img,.abbre_company_img {
+  margin-top: 15px;
+}
+.legalize_sub-btn {
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background: -webkit-linear-gradient(bottom, #4886ff, #0056ff);
+  background: -moz-linear-gradient(bottom, #4886ff, #0056ff);
+  background: linear-gradient(to bottom, #4886ff, #0056ff);
+}
+
+.tpl_company {
+  display: none;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>五星云站</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<div class="container">
+  <!--头部-->
+  <header class="header">
+    <div class="main_center clear_float">
+      <a href="#" class="logo">
+        <img src="../image/logo.png">
+      </a>
+      <a href="#" class="help">帮助中心</a>
+    </div>
+  </header>
+  <!--内容-->
+  <article class="main main_center">
+    <div class="pwd_main">
+      <header class="pwd_header clear_float">
+        <h1>找回密码</h1>
+        <a href="./index.html" class="return_login">返回登录</a>
+      </header>
+      <div class="steps">
+        <div class="step_main clear_float">
+          <div class="steps_item">
+            <div class="step_line">
+              <div class="step_dot step_dot-active">
+              </div>
+              <span class="steps_text">安全验证</span>
+            </div>
+          </div>
+          <div class="steps_item">
+            <div class="step_line">
+              <div class="step_dot">
+              </div>
+              <span class="steps_text">设置新密码</span>
+            </div>
+          </div>
+          <div class="steps_item">
+            <div class="step_line">
+              <div class="step_dot">
+              </div>
+              <span class="steps_text">完成</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="form_main find_pwd_form">
+        <div class="input_main pwd_1">
+          <i class="iconfont icon-yonghu"></i>
+          <input type="text" name="pwd1_account" placeholder="手机/邮箱"/>
+        </div>
+        <div class="input_slider pwd_1">
+          <div class="slider">
+            <i class="iconfont icon-shuangjiantou-right"></i>
+          </div>
+          <span class="slider_text">请按住滑块，拖到最右边</span>
+          <div class="active_slider"></div>
+        </div>
+        <div class="input_main-code pwd_1">
+          <div class="code_main">
+            <input type="text" name="pwd1_smsCode" placeholder="短信验证码"/>
+          </div>
+          <button class="get_code">获取验证码</button>
+        </div>
+        <div class="input_main pwd_2">
+          <input class="padding_16x" type="password" name="pwd2_new_pwd" placeholder="新密码"/>
+        </div>
+        <div class="input_main pwd_2">
+          <input class="padding_16x" type="password" name="pwd2_confirm_pwd" placeholder="确认新密码"/>
+        </div>
+        <div class="change_suc pwd_3">
+          <i class="iconfont icon-wancheng-copy"></i>
+          <span>密码修改成功！</span>
+        </div>
+        <a href="./index.html" class="login_btn pwd_3">
+          <div class="submit-btn">立即登陆</div>
+        </a>
+        <div id="find_pwd_2" class="login_btn pwd_2">
+          <button type="submit">确定</button>
+        </div>
+        <div id="find_pwd" class="login_btn pwd_1">
+          <button type="submit">下一步</button>
+        </div>
+      </form>
+    </div>
+  </article>
+  <!--页脚-->
+  <footer class="footer main_center">
+    <p>Copyright©2008-2018 GongChang.com. All Rights Reserved. <a href="#">世界工厂网</a> 版权所有</p>
+  </footer>
+</div>
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/extend.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/login.js"></script>
+</html>
