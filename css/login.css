@@ -1,3 +1,10 @@
+.login_main {
+  width: 1032px;
+  min-height: 420px;
+  background: #fff;
+  margin: 80px auto 0 auto;
+}
+
 .left_bg {
   width: 520px;
   height: 420px;
@@ -5,20 +12,20 @@
   background-size: contain;
   background-position-y: 72px;
   float: left;
-  margin: 80px 0 0 72px;
 }
 
 .right_form {
   width: 490px;
   height: 560px;
   float: right;
-  margin: 0 72px 80px 0;
+  margin-top: -30px;
 }
-
 .right_form-main {
   margin: 80px 0 0 56px;
 }
-
+.register {
+  margin-top: -80px;
+}
 .login_title {
   font-size: 24px;
   font-weight: 400;
@@ -56,7 +63,7 @@
 .input_main input {
   width: 100%;
   height: 100%;
-  padding-left: 48px;
+  padding: 0 100px 0 48px;
 }
 
 /*修改placeholder的样式*/
@@ -85,7 +92,7 @@ input::-webkit-input-placeholder {
   background: #e6e6e6;
 }
 
-.login_btn, .login_btn button {
+.login_btn button {
   border: none;
   cursor: pointer;
 }
@@ -95,6 +102,7 @@ input::-webkit-input-placeholder {
   height: 48px;
   color: #fff;
   background-image: linear-gradient(to bottom, #4886ff, #0056ff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4886ff', endColorstr='#0056ff', GradientType=0);
   border-radius: 4px;
   font-size: 18px;
   text-align: center;
@@ -104,6 +112,7 @@ input::-webkit-input-placeholder {
 .operate {
   width: 360px;
   margin-top: 30px;
+  line-height: 30px;
 }
 
 .operate .left_icon {
@@ -112,7 +121,6 @@ input::-webkit-input-placeholder {
 
 .operate .right_text {
   float: right;
-  line-height: 30px;
 }
 
 .operate .iconfont {
@@ -158,7 +166,6 @@ input::-webkit-input-placeholder {
 .input_main-code .get_code {
   position: absolute;
   right: 0;
-  display: inline-block;
   width: 102px;
   height: 100%;
   border-radius: 4px;
@@ -176,10 +183,10 @@ input::-webkit-input-placeholder {
 .slider {
   position: absolute;
   left: 0;
-  display: inline-block;
   width: 45px;
   height: 100%;
   background: #f0f0f0;
+  line-height: 46px;
   border-radius: 3px 0 0 3px;
   color: #808080;
   text-align: center;
@@ -194,8 +201,6 @@ input::-webkit-input-placeholder {
 }
 
 .slider .iconfont {
-  display: inline-block;
-  margin: 10px auto;
   font-size: 24px;
 }
 
@@ -236,6 +241,7 @@ input::-webkit-input-placeholder {
 .pact_main input[type='checkbox'] {
   width: 16px;
   height: 16px;
+  display: none;
 }
 
 .pact_main .active_checkbox {
@@ -281,17 +287,14 @@ input::-webkit-input-placeholder {
   width: 100%;
   height: 72px;
   margin: 32px auto 0 auto;
+  background: #fff;
 }
 
 /*步骤条*/
 .step_main {
-  position: absolute;
-  left: 50%;
   width: 687px;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background: #fff;
+  margin: 0 auto;
+  /*background: #4886ff;*/
 }
 
 .steps .steps_item {
@@ -320,7 +323,6 @@ input::-webkit-input-placeholder {
 
 .steps .step_dot {
   position: absolute;
-  display: inline-block;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -374,10 +376,8 @@ input::-webkit-input-placeholder {
 }
 
 .form_main, .bind_main {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  width: 360px;
+  margin: 0 auto;
 }
 
 /*密码修改成功*/
@@ -401,7 +401,7 @@ input::-webkit-input-placeholder {
 
 /*第三方绑定*/
 .bind_main {
-  margin: 92px 0 0 0;
+  margin-top: 92px;
 }
 
 /*微信登陆*/

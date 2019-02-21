@@ -112,7 +112,9 @@
   color: #808080;
   left: 16px;
   bottom: 13px;
-
+}
+.error_review {
+  width: 72px !important;
 }
 .index_tag {
   position: absolute;
@@ -175,6 +177,9 @@
   border: 1px solid #e6e6e6;
   text-align: center;
   cursor: pointer;
+}
+.upload input[type='file'] {
+  display: none;
 }
 .item_input-main .upload > span {
   line-height: 40px;
@@ -253,6 +258,7 @@ abbre_company_img {
   background: -webkit-linear-gradient(bottom, #4886ff, #0056ff);
   background: -moz-linear-gradient(bottom, #4886ff, #0056ff);
   background: linear-gradient(to bottom, #4886ff, #0056ff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4886ff', endColorstr='#0056ff', GradientType=0);
 }
 
 .tpl_company {

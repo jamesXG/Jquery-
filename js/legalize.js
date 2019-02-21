@@ -28,7 +28,7 @@ $(document).on('click', "button[type='submit']", function (event) {
   var data = [];
   for (var i = 0; i < formData.length; i++) {
     var item = formData[i];
-    if (item.name.includes(type)) {
+    if (item.name.indexOf(type) !== -1) {
       data.push(item);
     }
   }
@@ -76,7 +76,7 @@ $(".item_input-main input[type='text']").on('change', function () {
 $("input[type='file']").on('change', function (event) {
   var $_file = $(this);
   var fileSuffix = $_file.val().split('.')[1];
-  if (!['jpg', 'png', 'jpeg'].includes(fileSuffix)) {
+  if (!['jpg', 'png', 'jpeg'].indexOf(fileSuffix) !== -1) {
     $.error($(this).closest('.item_input-main'), '请上传正确的图片！', false);
     return false;
   }

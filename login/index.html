@@ -20,35 +20,37 @@
   </header>
   <!--内容-->
   <article class="main main_center">
-    <div class="main_content clear_float">
-      <div class="left_bg"></div>
-      <div class="right_form">
-        <div class="right_form-main">
-          <h1 class="login_title">登陆</h1>
-          <form class="login_form">
-            <div class="input_main">
-              <i class="iconfont icon-yonghu"></i>
-              <input type="text" name="account" placeholder="手机/邮箱"/>
+    <div class="main_content">
+      <div class="login_main clear_float">
+        <div class="left_bg"></div>
+        <div class="right_form">
+          <div class="right_form-main">
+            <h1 class="login_title">登录</h1>
+            <form class="login_form">
+              <div class="input_main">
+                <i class="iconfont icon-yonghu"></i>
+                <input type="text" name="account" maxlength="35" placeholder="手机/邮箱"/>
+              </div>
+              <div class="input_main">
+                <i class="iconfont icon-mima"></i>
+                <input type="password" maxlength="18" name="password" placeholder="密码"/>
+                <a href="./findPwd.html" class="forget_password">
+                  忘记密码？
+                </a>
+              </div>
+              <div id="login" class="login_btn">
+                <button type="submit">登录</button>
+              </div>
+            </form>
+            <div class="operate clear_float">
+              <div class="left_icon">
+                <a href="./wx.html">
+                  <i class="iconfont icon-weixin"></i>
+                </a>
+                <i class="iconfont icon-QQ"></i>
+              </div>
+              <a href="./register.html" class="right_text">注册</a>
             </div>
-            <div class="input_main">
-              <i class="iconfont icon-mima"></i>
-              <input type="password" name="password" placeholder="密码"/>
-              <a href="./findPwd.html" class="forget_password">
-                忘记密码？
-              </a>
-            </div>
-            <div id="login" class="login_btn">
-              <button type="submit">登陆</button>
-            </div>
-          </form>
-          <div class="operate clear_float">
-            <div class="left_icon">
-              <a href="./wx.html">
-                <i class="iconfont icon-weixin"></i>
-              </a>
-              <i class="iconfont icon-QQ"></i>
-            </div>
-            <a href="./register.html" class="right_text">注册</a>
           </div>
         </div>
       </div>

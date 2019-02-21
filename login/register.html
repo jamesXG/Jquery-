@@ -21,47 +21,49 @@
   <!--内容-->
   <article class="main main_center">
     <div class="main_content clear_float">
-      <div class="left_bg"></div>
-      <div class="right_form">
-        <div class="right_form-main">
-          <h1 class="login_title">注册</h1>
-          <form class="register_form">
-            <div class="input_main">
-              <i class="iconfont icon-shouji"></i>
-              <input type="text" name="account" placeholder="手机"/>
-            </div>
-            <div class="input_main">
-              <i class="iconfont icon-mima"></i>
-              <input type="password" name="password" placeholder="密码"/>
-            </div>
-            <div class="input_slider">
-              <div class="slider">
-                <i class="iconfont icon-shuangjiantou-right"></i>
+      <div class="login_main clear_float">
+        <div class="left_bg"></div>
+        <div class="right_form register">
+          <div class="right_form-main">
+            <h1 class="login_title">注册</h1>
+            <form class="register_form">
+              <div class="input_main">
+                <i class="iconfont icon-shouji"></i>
+                <input type="text" name="account" maxlength="11" placeholder="手机"/>
               </div>
-              <span class="slider_text">请按住滑块，拖到最右边</span>
-              <div class="active_slider"></div>
-            </div>
-            <div class="input_main-code">
-              <div class="code_main" >
-                <input type="text" name="smsCode" placeholder="短信验证码"/>
+              <div class="input_main">
+                <i class="iconfont icon-mima"></i>
+                <input type="password" maxlength="18" name="password" placeholder="密码"/>
               </div>
-              <button class="get_code">获取验证码</button>
+              <div class="input_slider">
+                <div class="slider">
+                  <i class="iconfont icon-shuangjiantou-right"></i>
+                </div>
+                <span class="slider_text">请按住滑块，拖到最右边</span>
+                <div class="active_slider"></div>
+              </div>
+              <div class="input_main-code">
+                <div class="code_main">
+                  <input type="text" maxlength="6" name="smsCode" placeholder="短信验证码"/>
+                </div>
+                <button class="get_code">获取验证码</button>
+              </div>
+              <div class="pact_main">
+                <input type="checkbox" id="pact_checkbox" hidden/>
+                <label for="pact_checkbox" class="active_checkbox"></label>
+                <p>阅读并接收<a href="#">注册协议</a></p>
+              </div>
+              <div id="register" class="register_btn">
+                <button type="submit">注册</button>
+              </div>
+            </form>
+            <div class="operate clear_float">
+              <div class="left_icon">
+                <a href="./wx.html"><i class="iconfont icon-weixin"></i></a>
+                <i class="iconfont icon-QQ"></i>
+              </div>
+              <a href="./index.html" class="right_text">已有账号，直接登陆</a>
             </div>
-            <div class="pact_main">
-              <input type="checkbox" id="pact_checkbox" hidden/>
-              <label for="pact_checkbox" class="active_checkbox"></label>
-              <p>阅读并接收<a href="#">注册协议</a></p>
-            </div>
-            <div id="register" class="register_btn">
-              <button type="submit">注册</button>
-            </div>
-          </form>
-          <div class="operate clear_float">
-            <div class="left_icon">
-              <a href="./wx.html"><i class="iconfont icon-weixin"></i></a>
-              <i class="iconfont icon-QQ"></i>
-            </div>
-            <a href="./index.html" class="right_text">已有账号，直接登陆</a>
           </div>
         </div>
       </div>
